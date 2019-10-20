@@ -1,0 +1,67 @@
+@import './../../styles/styles.scss';
+
+.content {
+    display: flex;
+    flex: 1;
+    word-break: break-all;
+}
+
+.Store {
+    display: flex;
+    padding: 0 2rem;
+
+    &__information {
+        margin-right: 2rem;
+        border: 2px solid $borderOutline;
+        padding: 1rem 1.5rem;
+        width: 25%;
+        border-radius: 4px;
+        background-color: #fff;
+
+        &__avatar {
+            padding: 0.5rem 0;
+            text-align: center;
+
+            > img {
+                height: 15rem;
+            }
+        }
+
+        &__info {
+            padding: 0.5rem 0;
+
+            .info--style {
+                display: flex;
+                margin-bottom: 0.7rem;
+
+                &__left {
+                    width: 100px;
+                    color: #a6a6a6;
+                }
+            }
+        }
+
+    }
+
+    &__message {
+        border: 2px solid $borderOutline;
+        height: fit-content;
+        padding: 1rem;
+        width: 75%;
+        border-radius: 4px;
+        background-color: #fff;
+
+        &__item {
+            display: flex;
+
+            .input {
+                border: 1px solid grey;
+                outline: none;
+                width: 100%;
+                border-radius: 4px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

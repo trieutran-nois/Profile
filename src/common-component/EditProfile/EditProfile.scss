@@ -1,0 +1,102 @@
+@import './../../styles/styles.scss';
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.EditProfile {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 55rem;
+    border: 2px solid $borderOutline;
+    border-radius: 4px;
+    background: #fff;
+    padding: 0 1.5rem;
+    z-index: 90;
+
+    &__header {
+        display: flex;
+        border-bottom: 1px solid $borderOutline;
+        padding: 1rem 0;
+
+        &__edit {
+            cursor: pointer;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        color: #4d4d4d;
+        margin-left: 1rem;
+    }
+
+    &--container {
+        display: flex;
+
+        &__image {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-right: 2rem;
+
+            > img {
+                height: 20rem;
+            }
+        }
+
+        &__left-btn {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: flex-end;
+
+            > div {
+                margin-right: 10px;
+            }
+        }
+
+        &__info {
+            width: 60%;
+            padding: 0 1rem;
+
+            .form-contain {
+                display: flex;
+                flex-direction: column;
+
+                &--input {
+                    display: flex;
+                }
+
+                &__font {
+                    color: $borderOutline;
+                    font-weight: bold;
+                }
+
+                .form {
+                    padding: 0.8rem 0.7rem;
+                    border-radius: 3px;
+                    outline: none;
+                    border: 1px solid $borderOutline;
+                    margin-right: 1rem;
+
+                    &--full {
+                        width: 100%;
+                    }
+
+                    &--half {
+                        width: 50%;
+                    }
+                }
+
+            }
+        }
+
+        &__btn {
+            > div {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+

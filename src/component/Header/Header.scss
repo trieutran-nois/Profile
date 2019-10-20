@@ -1,0 +1,52 @@
+@import './../../styles/styles.scss';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+
+    &__left {
+        display: flex;
+        justify-content: flex-start;
+        flex: 3;
+
+        &__content {
+            .icon {
+                cursor: pointer;
+                margin-right: 1rem;
+            }
+
+            .text {
+                font-weight: bold;
+                color: #6DB65B;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex: 1;
+        align-items: flex-end;
+
+        &__item {
+            border-right: 1px solid $borderOutline;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: baseline;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .circle {
+            position: absolute;
+            padding: 3px 6px;
+            border: 1px solid #00b359;
+            border-radius: 80%;
+            bottom: 13px;
+            right: 10px;
+            color: #fff;
+            font-size: 10px;
+            background: #00b359;
+        }
+    }
+}

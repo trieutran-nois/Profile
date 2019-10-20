@@ -1,0 +1,79 @@
+@import './../../styles/styles.scss';
+
+.LeftSideBar {
+    border: 2px solid $borderOutline;
+    border-radius: 4px;
+    width: 100%;
+    padding: 1rem 1.5rem;
+
+    &__first {
+        padding: 1rem 0 1.5rem;
+        border-bottom: 1px solid $borderOutline;
+        margin-bottom: 2rem;
+
+        &__change-store {
+            display: block;
+            padding: 0 0 0 2.5rem;
+            margin-top: 1.5rem;
+            color: #4d94ff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    &__second {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $borderOutline;
+        justify-content: space-between;
+        padding: 0 0 1.5rem;
+
+        &__favorite-items {
+            text-transform: uppercase;
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+    }
+
+    &__list-items {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        padding: 1rem 0;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+            .content {
+                display: flex;
+                margin-bottom: 2rem;
+                cursor: pointer;
+
+                &__icon {
+                    margin-right: 3.5rem;
+
+                    .svg-inline--fa {
+                        width: 1.75rem;
+                        &:hover {
+                            color: #808080;
+                        }
+                    }
+
+                }
+
+                &__name {
+                    color: #cccccc;
+                    font-weight: bold;
+                    font-size: 18px;
+                    word-break: break-word;
+
+                    &:hover {
+                        color: #808080;
+                    }
+                }
+            }
+        }
+    }
+}

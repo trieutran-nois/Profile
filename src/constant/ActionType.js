@@ -1,0 +1,4 @@
+export const EDIT_STORE_PROFILE = 'EDIT_STORE_PROFILE';
+export const OPEN_LEFT_SIDE_BAR = 'OPEN_LEFT_SIDE_BAR';
+export const OPEN_MODAL = 'OPEN_MODAL';
+export const CLOSE_MODAL = 'CLOSE_MODAL';

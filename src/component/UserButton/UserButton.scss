@@ -1,0 +1,25 @@
+.UserButton {
+    display: flex;
+    width: 10rem;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        height: 20px;
+
+        &__first {
+            font-weight: bold;
+        }
+
+        &__second {
+            font-size: 12px;
+            color: grey;
+        }
+    }
+}

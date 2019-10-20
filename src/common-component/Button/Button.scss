@@ -1,0 +1,21 @@
+@import './../../styles/styles.scss';
+
+.Button {
+    border: 1px solid $bgColorBtn;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+
+    &.grey {
+        &:active {
+            background-color: #cccccc !important;
+        }
+    }
+
+    &.green {
+        &:active {
+            background-color: #006633 !important;
+        }
+    }
+}
